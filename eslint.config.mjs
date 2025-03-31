@@ -24,6 +24,7 @@ const eslintConfig = [
       "simple-import-sort": eslintPluginSimpleImportSort,
     },
     rules: {
+      "indent": ["error", 2],
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
       "import/order": [
