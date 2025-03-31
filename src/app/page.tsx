@@ -1,4 +1,6 @@
-import prisma from '@/lib/prisma'
+import "./globals.css";
+
+import prisma from "@/lib/prisma";
 
 export default async function Home() {
   const users = await prisma.user.findMany();
@@ -6,10 +8,10 @@ export default async function Home() {
     <div>
       setup
       {users.map((user) => (
-          <li key={user.id} className="mb-2">
-            {user.name}
-          </li>
-        ))}
+        <li key={user.id} className="mb-2">
+          {user.name}
+        </li>
+      ))}
     </div>
   );
 }

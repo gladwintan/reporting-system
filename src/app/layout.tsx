@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
+import "./globals.css";
 import {
   ClerkProvider,
-  SignInButton,
-  SignUpButton,
   SignedIn,
   SignedOut,
+  SignInButton,
+  SignUpButton,
   UserButton,
-} from '@clerk/nextjs'
+} from "@clerk/nextjs";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 
 const inter = Inter({
-  subsets: ['latin'],
-})
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Reporting system",
