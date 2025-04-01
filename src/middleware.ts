@@ -8,7 +8,6 @@ export default clerkMiddleware(async (auth, req) => {
   if (!userId && !isAuthRoute(req)) {
     return redirectToSignIn()
   }
-
 })
 
 export const config = {
